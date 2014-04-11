@@ -229,6 +229,7 @@ b {
   font-size: 17px;
 }
 .btn--order {
+  background: #ff0;
   background: -webkit-linear-gradient(top, #ff0, #f59c00);
   background: -moz-linear-gradient(top, #ff0, #f59c00);
   background: -o-linear-gradient(top, #ff0, #f59c00);
@@ -245,6 +246,7 @@ b {
   background: linear-gradient(to bottom, #ffff59, #f59c00);
 }
 .btn--open {
+  background: #ea2a53;
   background: -webkit-linear-gradient(top, #ea2a53, #c02244);
   background: -moz-linear-gradient(top, #ea2a53, #c02244);
   background: -o-linear-gradient(top, #ea2a53, #c02244);
