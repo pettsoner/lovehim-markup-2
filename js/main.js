@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     /* --- Галерея ---------------------------------------- */
 
-    $('.b-gallery__item a').fancybox();
+    //$('.b-gallery__item a').fancybox();
 
     $('.b-gallery__items').bxSlider({
         maxSlides: 4,
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     /* --- Форма заказа ---------------------------------- */
 
-    var $orderForm = $('.b-order-form');
+    var $orderForm = $('.b-order-form, .b-order-form-inline');
     $orderForm.find('[name="phone"]').mask('+7 (999) 999-99-99');
 
     $orderForm.find('form').submit(function(e) {
