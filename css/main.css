@@ -3,6 +3,12 @@
 /* Подключение файлов
 ----------------------------------------------------------- */
 @font-face {
+  font-family: 'Gabriola';
+  src: url("../fonts/gabriola.eot"), url("../fonts/gabriola.eot?#iefix") format('embedded-opentype'), url("../fonts/gabriola.woff") format('woff'), url("../fonts/gabriola.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "PFDinDisplayPro-Regular";
   src: url("../fonts/PFDinDisplayPro-Reg.eot");
   src: url("../fonts/PFDinDisplayPro-Reg.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Reg.woff") format('woff'), url("../fonts/PFDinDisplayPro-Reg.ttf") format('truetype');
@@ -127,11 +133,16 @@ html {
 body {
   min-width: 1200px;
   font-smooth: always;
+  color: #393939;
 }
 p {
   font: inherit;
 }
 a {
+  color: inherit;
+}
+b {
+  font-family: 'PFDinDisplayPro-Bold', sans-serif;
   color: inherit;
 }
 .container {
@@ -178,9 +189,9 @@ a {
 }
 .form__input {
   display: block;
-  padding: 8px 16px;
+  padding: 9px 16px;
   font-style: italic;
-  font-size: 17px;
+  font-size: 16px;
   color: #393939;
   border: 1px solid #e72951;
   -webkit-border-radius: 5px;
@@ -193,7 +204,9 @@ a {
   box-shadow: 0px 0px 0px 2px #fff;
 }
 .btn,
-.btn--submit {
+.btn--submit,
+.btn--open {
+  display: inline-block;
   outline: none;
   border: none;
   cursor: pointer;
@@ -201,6 +214,11 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font: inherit;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .btn--submit {
   padding: 11px 30px;
@@ -209,12 +227,122 @@ a {
   background: -o-linear-gradient(top, #ff0, #f59c00);
   background: -ms-linear-gradient(top, #ff0, #f59c00);
   background: linear-gradient(to bottom, #ff0, #f59c00);
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
   color: #572c15;
   font-size: 24px;
+}
+.btn--open {
+  padding: 8px 20px;
+  background: -webkit-linear-gradient(top, #ea2a53, #c02244);
+  background: -moz-linear-gradient(top, #ea2a53, #c02244);
+  background: -o-linear-gradient(top, #ea2a53, #c02244);
+  background: -ms-linear-gradient(top, #ea2a53, #c02244);
+  background: linear-gradient(to bottom, #ea2a53, #c02244);
+  color: #fff;
+  border-bottom: 1px solid #7b2736;
+}
+::-webkit-input-placeholder {
+  color: #393939;
+}
+:-moz-placeholder {
+  color: #393939;
+}
+::-moz-placeholder {
+  color: #393939;
+}
+:-ms-input-placeholder {
+  color: #393939;
+}
+.b-advantages {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.b-advantages__item,
+.b-advantages__item--silver,
+.b-advantages__item--color,
+.b-advantages__item--durability,
+.b-advantages__item--handwork {
   text-transform: uppercase;
-  text-align: center;
+  margin: 35px 0;
+  padding: 5px 0 0 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.b-advantages__item:after,
+.b-advantages__item--silver:after,
+.b-advantages__item--color:after,
+.b-advantages__item--durability:after,
+.b-advantages__item--handwork:after {
+  content: '';
+  height: 42px;
+  position: absolute;
+  left: 60px;
+  top: 5px;
+  border-right: 1px solid #c52345;
+}
+.b-advantages__item__heading,
+.b-advantages__item--silver__heading,
+.b-advantages__item--color__heading,
+.b-advantages__item--durability__heading,
+.b-advantages__item--handwork__heading {
+  margin: 0 0 4px;
+  font-family: 'PFDinDisplayPro-Regular', sans-serif;
+  color: #505050;
+}
+.b-advantages__item__text,
+.b-advantages__item--silver__text,
+.b-advantages__item--color__text,
+.b-advantages__item--durability__text,
+.b-advantages__item--handwork__text {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.25;
+}
+.b-advantages__item--silver:before {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 52px;
+  padding-right: 8px;
+  background: url("../img/b-advantages__item-sprite.png") no-repeat 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-advantages__item--color:before {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 52px;
+  padding-right: 8px;
+  background: url("../img/b-advantages__item-sprite.png") no-repeat 0 -76px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-advantages__item--durability:before {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 52px;
+  padding-right: 8px;
+  background: url("../img/b-advantages__item-sprite.png") no-repeat 0 -165px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-advantages__item--handwork:before {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 52px;
+  padding-right: 8px;
+  background: url("../img/b-advantages__item-sprite.png") no-repeat 0 -240px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .b-footer {
   background: url("../img/gray-bg.jpg") repeat;
@@ -240,7 +368,7 @@ a {
   padding: 25px 0;
 }
 .b-header__top {
-  padding-top: 15px;
+  padding-top: 10px;
   height: 96px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -251,15 +379,44 @@ a {
   height: 400px;
 }
 .b-header__logo {
+  margin-top: 5px;
   float: left;
   font: bold 56px 'Times New Roman', serif;
   text-transform: uppercase;
 }
 .b-header__contacts {
   float: right;
+  text-align: right;
 }
 .b-header__contacts__phone {
   font: 25px 'PFDinDisplayPro-Light', sans-serif;
+  margin-bottom: 7px;
+}
+.b-header__contacts__btn {
+  display: inline-block;
+}
+.b-header__quote {
+  float: right;
+  margin: 75px 0 0;
+  padding: 11px 20px 40px 80px;
+  height: 251px;
+  width: 358px;
+  background: url("../img/b-header__quote-bg.png") no-repeat left top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Gabriola', sans-serif;
+  line-height: 0.95;
+}
+.b-header__quote__heading {
+  font-size: 26px;
+  color: #464646;
+  margin-bottom: 5px;
+}
+.b-header__quote__text {
+  font-size: 23px;
+  color: #ef4f4f;
+  word-wrap: break-word;
 }
 .b-how-we-work {
   padding: 30px 0;
@@ -406,11 +563,27 @@ a {
   overflow: hidden;
 }
 .b-product {
-  padding: 10px 0;
   background: url("../img/gray-bg.jpg") repeat;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.b-product .container {
+  padding: 0 22px;
+}
+.b-product__image {
+  float: left;
+  margin: 5px 8px 0 0;
+}
+.b-product__price {
+  float: left;
+  background: url("../img/b-product__price.png") no-repeat;
+  width: 183px;
+  height: 383px;
+}
+.b-product__advantages {
+  width: 367px;
+  float: right;
 }
 .b-reviews {
   background: url("../img/gray-bg.jpg") repeat;

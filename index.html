@@ -40,14 +40,22 @@
                 <form class="b-order-form b-order-form--right">
                     <h2 class="b-order-form__heading heading">БЫСТРЫЙ ЗАКАЗ</h2>
 
-                    <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя...">
+                    <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя..." name="name">
 
-                    <input type="text" class="form__input b-order-form__input" placeholder="+7 номер телефона">
+                    <input type="text" class="form__input b-order-form__input" placeholder="+7 номер телефона" name="phone">
 
                     <p class="b-order-form__warning">Пожалуйста, заполните форму.</p>
 
                     <button class="btn--submit b-order-form__btn">Заказать сейчас</button>
                 </form>
+
+                <div class="b-header__quote">
+                    <h2 class="heading b-header__quote__heading">Древняя китайская<br>пословица гласит:</h2>
+
+                    <p class="b-header__quote__text">
+                        Невидимой красной нитью со-<br>единены те, кому суждено<br> встретиться, несмотря на<br> Время, Место и Обстоятель-<br>ства. Нить может растянуть-<br>ся или спутаться, но никогда не порвется!
+                    </p>
+                </div>
 
             </div>
         </section>
@@ -60,6 +68,44 @@
             
             <img src="img/b-product__image.png" alt="" class="b-product__image">
 
+            <div class="b-product__price">
+
+            </div>
+
+            <ul class="b-advantages b-product__advantages">
+                <li class="b-advantages__item--silver">
+                    <h2 class="b-advantages__item__heading"><b>Серебро</b> 925 пробы</h2>
+
+                    <p class="b-advantages__item__text">
+                        Лучшие материалы для чудесного браслета.
+                    </p>
+                </li>
+
+                <li class="b-advantages__item--color">
+                    <h2 class="b-advantages__item__heading">Можно выбрать <b>цвет нити</b></h2>
+
+                    <p class="b-advantages__item__text">
+                        Большой выбор цветов нити для браслета.
+                    </p>
+                </li>
+
+                <li class="b-advantages__item--durability">
+                    <h2 class="b-advantages__item__heading"><b>Прочная</b> нить</h2>
+
+                    <p class="b-advantages__item__text">
+                        Нить выдерживает разрыную нагрузку<br>в 150 килограм
+                    </p>
+                </li>
+
+                <li class="b-advantages__item--handwork">
+                    <h2 class="b-advantages__item__heading"><b>Ручная работа</b></h2>
+
+                    <p class="b-advantages__item__text">
+                        Работу мастера не заменит ни одна машина
+                    </p>
+                </li>
+            </ul>
+
         </div>
     </section>
 
@@ -71,9 +117,9 @@
             <form>
                 <h2 class="b-order-form-inline__heading heading">ЗАКАЗАТЬ БРАСЛЕТ ПРЯМО СЕЙЧАС:</h2>
 
-                <input type="text" class="form__input b-order-form-inline__input" placeholder="Ваше имя...">
+                <input type="text" class="form__input b-order-form-inline__input" placeholder="Ваше имя..." name="name">
 
-                <input type="text" class="form__input b-order-form-inline__input" placeholder="+7 номер телефона">
+                <input type="text" class="form__input b-order-form-inline__input" placeholder="+7 номер телефона" name="phone">
 
                 <button class="btn--submit b-order-form-inline__btn">Заказать сейчас</button>
             </form>
@@ -193,9 +239,9 @@
             <form>
                 <h2 class="b-order-form-inline__heading heading">ЗАКАЗАТЬ БРАСЛЕТ ПРЯМО СЕЙЧАС:</h2>
 
-                <input type="text" class="form__input b-order-form-inline__input" placeholder="Ваше имя...">
+                <input type="text" class="form__input b-order-form-inline__input" placeholder="Ваше имя..." name="name">
 
-                <input type="text" class="form__input b-order-form-inline__input" placeholder="+7 номер телефона">
+                <input type="text" class="form__input b-order-form-inline__input" placeholder="+7 номер телефона" name="phone">
 
                 <button class="btn--submit b-order-form-inline__btn">Заказать сейчас</button>
             </form>
@@ -258,9 +304,9 @@
            <form class="b-order-form b-order-form--right b-order-form--footer">
                 <h2 class="b-order-form__heading heading">БЫСТРЫЙ ЗАКАЗ</h2>
 
-                <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя...">
+                <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя..." name="name">
 
-                <input type="text" class="form__input b-order-form__input" placeholder="+7 номер телефона">
+                <input type="text" class="form__input b-order-form__input" placeholder="+7 номер телефона" name="phone">
 
                 <p class="b-order-form__warning">Пожалуйста, заполните форму.</p>
 
@@ -273,6 +319,9 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
