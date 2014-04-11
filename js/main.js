@@ -4,11 +4,11 @@ $(document).ready(function() {
 
     $('.b-gallery__item a').fancybox();
 
-    $('.b-gallery__slider').bxSlider({
-        maxSlides: 5,
-        slideWidth: 186,
+    $('.b-gallery__items').bxSlider({
+        maxSlides: 4,
+        slideWidth: 270,
         adaptiveHeight: true,
-        slideMargin: 5,
+        slideMargin: 20,
         pager: false,
         infiniteLoop: false,
     });
