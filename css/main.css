@@ -233,6 +233,12 @@ a {
 .b-footer__info__text {
   margin-bottom: 30px;
 }
+.b-gallery {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 0;
+}
 .b-header__top {
   padding-top: 15px;
   height: 96px;
@@ -400,7 +406,7 @@ a {
   overflow: hidden;
 }
 .b-product {
-  height: 384px;
+  padding: 10px 0;
   background: url("../img/gray-bg.jpg") repeat;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
