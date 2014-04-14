@@ -30,7 +30,7 @@
 
             <div class="b-header__contacts">
                 <p class="b-header__contacts__phone">+7 (495) 532-32-50</p>
-                <a href="#" class="btn--open btn--small" data-scroll=".b-header__main .b-order-form">Заказать звонок</a>
+                <a href="#" class="btn--open btn--small" data-modal="true">Заказать звонок</a>
             </div>
 
         </section>
@@ -180,7 +180,7 @@
                     </a>
 
                     <div class="b-gallery__order">
-                        <a href="#" class="btn--order btn--small" data-scroll=".b-header__main .b-order-form">Заказать сейчас</a>
+                        <a href="#" class="btn--order btn--small" data-modal="true">Заказать сейчас</a>
                     </div>
                 </li> 
 
@@ -190,7 +190,7 @@
                     </a>
 
                     <div class="b-gallery__order">
-                        <a href="#" class="btn--order btn--small" data-scroll=".b-header__main .b-order-form">Заказать сейчас</a>
+                        <a href="#" class="btn--order btn--small" data-modal="true">Заказать сейчас</a>
                     </div>
                 </li>
 
@@ -200,7 +200,7 @@
                     </a>
 
                     <div class="b-gallery__order">
-                        <a href="#" class="btn--order btn--small" data-scroll=".b-header__main .b-order-form">Заказать сейчас</a>
+                        <a href="#" class="btn--order btn--small" data-modal="true">Заказать сейчас</a>
                     </div>
                 </li>
 
@@ -210,7 +210,7 @@
                     </a>
 
                     <div class="b-gallery__order">
-                        <a href="#" class="btn--order btn--small" data-scroll=".b-header__main .b-order-form">Заказать сейчас</a>
+                        <a href="#" class="btn--order btn--small" data-modal="true">Заказать сейчас</a>
                     </div>
                 </li>
             </ul>
@@ -342,7 +342,7 @@
                 </p>
             </div>
 
-           <form class="b-order-form b-order-form--right b-order-form--footer">
+           <form class="b-order-form b-order-form--right b-footer__order-form">
                 <h2 class="b-order-form__heading heading">БЫСТРЫЙ ЗАКАЗ</h2>
 
                 <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя..." name="name">
@@ -354,8 +354,25 @@
                 <button class="btn--order btn--big b-order-form__btn">Заказать сейчас</button>
             </form>
 
+            <div class="b-footer__bottom">
+                <a href="http://www.amorem.ru" class="b-footer__bottom__more btn--small btn--order">Другие наши товары</a>
+                <a href="http://fireseo.ru" class="b-footer__bottom__developing"><img src="img/developing.png"></a>
+            </div>
+
         </div>
     </footer>
+
+    <form class="b-order-form b-order-form--modal">
+        <h2 class="b-order-form__heading heading">БЫСТРЫЙ ЗАКАЗ</h2>
+
+        <input type="text" class="form__input b-order-form__input" placeholder="Ваше имя..." name="name">
+
+        <input type="text" class="form__input b-order-form__input" placeholder="+7 номер телефона" name="phone">
+
+        <p class="b-order-form__warning">Пожалуйста, заполните форму.</p>
+
+        <button class="btn--order btn--big b-order-form__btn">Заказать сейчас</button>
+    </form>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

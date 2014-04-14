@@ -368,6 +368,20 @@ b {
 }
 .b-footer {
   background: url("../img/gray-bg.jpg") repeat;
+  height: 400px;
+/* Форма заказа
+    ---------------------------------------------- */
+/* Информационные блоки
+    ---------------------------------------------- */
+/* Нижняя часть
+    ---------------------------------------------- */
+}
+.b-footer .container {
+  position: relative;
+}
+.b-footer__order-form {
+  padding-top: 50px;
+  height: 400px;
 }
 .b-footer__info {
   padding: 26px 0 0;
@@ -382,6 +396,17 @@ b {
 }
 .b-footer__info__text {
   margin-bottom: 30px;
+}
+.b-footer__bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 210px;
+  text-align: center;
+}
+.b-footer__bottom__more {
+  display: block;
+  width: 260px;
+  margin-bottom: 12px;
 }
 .b-gallery {
   -webkit-box-sizing: border-box;
@@ -585,17 +610,16 @@ b {
   width: 365px;
   height: 400px;
   padding: 65px 32px 0;
-  background: url("../img/red-bg.jpg") repeat;
+  background: transparent url("../img/red-bg.jpg") repeat;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.b-order-form--footer {
-  padding-top: 40px;
-  height: 340px;
-}
 .b-order-form--right {
   float: right;
+}
+.b-order-form--modal {
+  display: none;
 }
 .b-order-form__input {
   margin: 20px 0;

@@ -14,6 +14,16 @@ $(document).ready(function() {
 
     $('.b-gallery__preview').fancybox();
 
+    $('[data-modal]').click(function(e) {
+
+        $.fancybox.open($('.b-order-form--modal'), {
+            padding: 0
+        });
+
+        return e.preventDefault();
+
+    });
+
     /* Форма заказа
     ------------------------------------------------------- */
 
@@ -53,5 +63,6 @@ $(document).ready(function() {
         }, 700);
         return false;
     });
+
 
 });
