@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     $('[data-scroll]').click(function() {
         $('html, body').animate({
-          scrollTop: $('.' + $(this).data('scroll')).offset().top
+          scrollTop: $($(this).data('scroll')).offset().top
         }, 700);
         return false;
     });
