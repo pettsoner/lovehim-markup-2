@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
-    /* --- Галерея ---------------------------------------- */
-
-    //$('.b-gallery__item a').fancybox();
+    /* Галерея 
+    ------------------------------------------------------- */
 
     $('.b-gallery__items').bxSlider({
         maxSlides: 4,
@@ -13,7 +12,10 @@ $(document).ready(function() {
         infiniteLoop: false,
     });
 
-    /* --- Форма заказа ---------------------------------- */
+    $('.b-gallery__preview').fancybox();
+
+    /* Форма заказа
+    ------------------------------------------------------- */
 
     var $orderForm = $('.b-order-form, .b-order-form-inline');
     $orderForm.find('[name="phone"]').mask('+7 (999) 999-99-99');
@@ -29,7 +31,7 @@ $(document).ready(function() {
 
             } else {
 
-                $.fancybox('<h2 class="b-order-form__success-heading">Мы с Вами свяжемся в течении 30 минут рабочего времени по Мск!</h2>', {
+                $.fancybox('<h2>Мы с Вами свяжемся в течении 30 минут рабочего времени по Мск!</h2>', {
                     minHeight: 45
                 });
                 
@@ -41,6 +43,9 @@ $(document).ready(function() {
 
         e.preventDefault();
     });
+
+    /* Скроллер
+    ------------------------------------------------------- */
 
     $('[data-scroll]').click(function() {
         $('html, body').animate({
